@@ -86,7 +86,7 @@ $('#button-send-message').click(function(){
         ){
         if(IsEmail($('#input-email').val())){
             $.ajax({
-                'url' : 'https://ppmcharly.000webhostapp.com/api/portfolio-message,
+                'url' : 'https://ppmcharly.000webhostapp.com/api/portfolio-message',
                 'type': 'POST',
                 'dataType': 'JSON',
                 'data' : {
