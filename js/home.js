@@ -98,6 +98,8 @@ $('#button-send-message').click(function(){
                     $('#input-email').val('')
                     $('#input-username').val('')
                     $('#input-message').val('')
+                    $('#feedback-error').css('color', 'green')
+                    $('#feedback-error').html('Pesan Berhasil Terkirim Ke Charly')
                 }
             })
         }else {
