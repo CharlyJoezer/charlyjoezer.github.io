@@ -33,6 +33,26 @@ window.addEventListener("scroll", (event) => {
         }else{
             navbar.style.height = "60px";
         }
+
+        $('.section4-content').html(
+            `<div class="box-image">
+                <p>Aplikasi Pengaduan Masyarakat</p>
+                <img src="asset/PPM.jpg" alt="Aplikasi Pengaduan Masyarakat">
+            </div>
+            <div class="box-image">
+                <p>Aplikasi E-Commerce</p>
+                <img src="asset/toko_online.png" alt="Aplikasi E-commerce terinsipirasi dari Tokopedia">
+            </div>
+            <div class="box-image">
+                <p>Aplikasi Pesan Kopi Online</p>
+                <img src="asset/Cafe_order.png" alt="Aplikasi Pesan Kopi Online">
+            </div>
+            <div class="box-image">
+                <p>Aplikasi Pesan Kopi Online</p>
+                <img src="asset/skakes.jpg" alt="Aplikasi Pesan Kopi Online">
+            </div>
+            `
+        )
     }else {
         navbar.style.background = "rgba(24, 63, 121, 0)";
         navbar.style.height = "70px";
@@ -148,7 +168,9 @@ $('#close').click(function(){
     }
 })
 
-
+$('.box-image').click(function(){
+    $(this).children('img').attr('src', 'asset/skakes.png')
+});
   
 
 // Copas Script
