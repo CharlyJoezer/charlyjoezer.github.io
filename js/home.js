@@ -48,7 +48,7 @@ window.addEventListener("scroll", (event) => {
                 <img src="asset/Cafe_order.png" alt="Aplikasi Pesan Kopi Online">
             </div>
             <div class="box-image">
-                <p>Aplikasi Pesan Kopi Online</p>
+                <p>Aplikasi Smk Kesehatan Airlangga</p>
                 <img src="asset/skakes.jpg" alt="Aplikasi Pesan Kopi Online">
             </div>
             `
