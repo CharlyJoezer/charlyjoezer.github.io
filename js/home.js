@@ -86,7 +86,7 @@ $('#button-send-message').click(function(){
         ){
         if(IsEmail($('#input-email').val())){
             $.ajax({
-                'url' : BASEURL + '/api/sendmessage',
+                'url' : 'https://ppmcharly.000webhostapp.com/api/portfolio-message',
                 'type': 'POST',
                 'dataType': 'JSON',
                 'data' : {
@@ -98,6 +98,8 @@ $('#button-send-message').click(function(){
                     $('#input-email').val('')
                     $('#input-username').val('')
                     $('#input-message').val('')
+                    $('#feedback-error').css('color', 'green')
+                    $('#feedback-error').html('Pesan Berhasil Terkirim Ke Charly')
                 }
             })
         }else {
