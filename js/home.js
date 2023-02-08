@@ -98,35 +98,32 @@ $('#navbar-items-contact').click(()=>{
     }, 500);
 })
 $('#button-send-message').click(function(){
+    const date = new Date()
+    let today = date.getFullYear() +'-'+ (date.getMonth() + 1) +'-'+ date.getDate();
     $('#feedback-error').html('')
-    if(
-        !$('#input-email').val().length == 0 &&
-        !$('#input-username').val().length == 0 &&
-        !$('#input-message').val().length == 0
-        ){
-        if(IsEmail($('#input-email').val())){
+    if(!$('#input-username').val().length == 0 && !$('#input-message').val().length == 0){
+        $('#feedback-error').css('color', 'orange')
+        $('#feedback-error').html('Mengirim Pesan....')
             $.ajax({
                 'url' : 'https://ppmcharly.000webhostapp.com/api/portfolio-message',
                 'type': 'POST',
                 'dataType': 'JSON',
                 'data' : {
-                    'email' : $('#input-email').val(),
                     'username' : $('#input-username').val(),
-                    'message' : $('#input-message').val()
+                    'message' : $('#input-message').val(),
+                    'tanggal' : today
                 },
                 success: function(data){
-                    $('#input-email').val('')
                     $('#input-username').val('')
                     $('#input-message').val('')
                     $('#feedback-error').css('color', 'green')
                     $('#feedback-error').html('Pesan Berhasil Terkirim Ke Charly')
+                },
+                error: function(){
+                    $('#feedback-error').css('color', 'red')
+                    $('#feedback-error').html('Gagal Mengirim Pesan!')
                 }
             })
-        }else {
-            $('#input-email').css('border-bottom', '2px solid red')
-            $('#input-email').val('')
-            $('#input-email').attr('placeholder', 'Invalid Email!')
-        }
     }else{
         $('#feedback-error').html('Mohon kolom tidak boleh kosong!')
     }
