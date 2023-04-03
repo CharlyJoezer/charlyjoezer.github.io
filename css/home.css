@@ -95,7 +95,8 @@ ul, li {
     width: fit-content;
     background-color: #fa3131;
     color: white;
-    font-family: PP telegraf, sans-serif;
+    font-family: sans-serif;
+    font-weight: 200;
     cursor: pointer;
     box-shadow: 0 0 3px #ccc;
     animation-name: example;
@@ -103,6 +104,7 @@ ul, li {
     animation-iteration-count: infinite;
     animation-delay: 2s;
     border-radius: 3px;
+    line-height: 0.9;
 }
 .button-header:hover{
     box-shadow: 0px 3px 5px #ccc;
