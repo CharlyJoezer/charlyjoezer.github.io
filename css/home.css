@@ -1,3 +1,22 @@
+/* @font-face {
+    font-family: PP telegraf;
+    src: url('/css/font/PPTelegraf-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+} */
+@font-face {
+    font-family: PP telegraf;
+    src: url('/css/font/PPTelegraf-UltraBold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+/* @font-face {
+    font-family: PP telegraf;
+    src: url('/css/font/PPTelegraf-UltraLight.otf');
+    font-weight: lighter;
+    font-style: normal;
+} */
+
 body{
     margin: 0px;
     scroll-behavior: smooth;
