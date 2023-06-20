@@ -200,7 +200,7 @@ ul, li {
     font-family: PP telegraf;
     font-size: 40px;
     width: 100%;
-    opacity: 0;
+    opacity: 1;
     transition: 0.5s;
     padding-top: 25px;
     margin-bottom: 10px;
