@@ -31,44 +31,6 @@ ul, li {
     padding: 0px;
     list-style-type: none;
 }
-.navbar-top{
-    width: 100%;
-    box-sizing: border-box;
-    height: 70px;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    opacity: 1;
-    font-family: sans-serif;
-    background: rgba(24, 63, 121, 0);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: 0.5s;
-}
-.title-home {
-    color: white;
-    font-size: 12px;
-    margin-left: 15px;
-    cursor: pointer;
-}
-.navbar-items{
-    color: #fff;
-    font-size: 16px;
-    font-family: Arial;
-    font-weight: 500;
-}
-.list-navbar-items{
-    display: flex;
-    justify-content: space-around;
-    font-weight: bold;
-}
-.list-navbar-items li {
-    cursor: pointer;
-}
-.list-navbar-items li:hover{
-    color: white;
-}
 .section-1 {
     background-image: url('../asset/bg-2.jpg');
     background-repeat: no-repeat;
