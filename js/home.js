@@ -185,7 +185,7 @@ $(function(){
 
 $('.button-see-project').click(function(){
    const image = {
-    'cafe_order.png' : 'Order Kopi Online',
+    'Cafe_order.png' : 'Order Kopi Online',
     'skakes.jpg' : 'Pemeriksaan Laboratorium',
     'PPM.jpg' : 'Pengaduan Masyarakat',
     'toko_online.png' : 'Website E-Commerce '
