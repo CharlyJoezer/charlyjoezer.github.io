@@ -1,27 +1,28 @@
-/* @font-face {
-    font-family: PP telegraf;
-    src: url('/css/font/PPTelegraf-Regular.otf');
-    font-weight: normal;
-    font-style: normal;
-} */
 @font-face {
     font-family: PP telegraf;
-    src: url('/css/font/PPTelegraf-UltraBold.otf');
+    src: url('font/PPTelegraf-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: PP telegraf;
+    src: url('font/PPTelegraf-UltraBold.otf');
     font-weight: bold;
     font-style: normal;
 }
-/* @font-face {
+@font-face {
     font-family: PP telegraf;
-    src: url('/css/font/PPTelegraf-UltraLight.otf');
+    src: url('font/PPTelegraf-UltraLight.otf');
     font-weight: lighter;
     font-style: normal;
-} */
+}
 
 body{
     margin: 0px;
     scroll-behavior: smooth;
     transition: 0.5s;
     position: relative;
+    font-family: sans-serif!important;
 }
 h1, h2, h3, h4, h5, p {
     margin: 0px;
@@ -31,10 +32,91 @@ ul, li {
     padding: 0px;
     list-style-type: none;
 }
+.navbar{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 3%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    font-family: PP telegraf, sans-serif;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+.navbar-header{
+    width: 40%;
+    padding-right: 15%;
+}
+.navbar-header .image-and-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-header .image-and-text img{
+    width: 40px;
+    padding: 10px 0px;
+    border-radius: 50%;
+}
+.navbar-header .image-and-text .profil-data{
+    padding-left: 8px;
+}
+.nav-name {
+
+}
+.nav-profession{
+    font-size: 10px;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+.navbar-items{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar-link{
+    padding: 0px 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    /* font-family: sans-serif; */
+    transition: 0.2s;
+}
+.navbar-link:hover{
+    color: #214d8f;
+    text-shadow: 0 0 3px white;
+}
+.button-navbar{
+    padding: 8px 10px;
+    background-color: #1b417b;
+    font-size: 13px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.button-navbar:hover{
+    background-color: #214d8f;
+}
+.navbar-link-event-scroll{
+    color: black;
+}
+.bg-navbar-event-scroll{
+    background-color: white;
+    box-shadow : 0 0 3px grey;
+}
 .section-1 {
-    background-image: url('../asset/bg-2.jpg');
+    background-image: url('../asset/bg-drone.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100vh;
     overflow-y: none;
@@ -42,7 +124,7 @@ ul, li {
     flex-wrap: wrap-reverse;
     justify-content: space-around;
     align-items: center;
-    box-shadow: inset 0 -50px 150px rgb(0, 0, 0);
+    /* box-shadow: inset 0 -50px 150px rgb(0, 0, 0); */
 }
 .header-text h1{
     font-size: 80px;
