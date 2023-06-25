@@ -10,6 +10,12 @@ $(document).scroll(function() {
     }
 })
 
+$('.toggle-navbar-items').click(function(){
+    $('.navbar-mobile .navbar-items').toggleClass('show-navbar-items-mobile')
+})
+$('.navbar-link').click(function(){
+    $('.navbar-mobile .navbar-items').removeClass('show-navbar-items-mobile')
+})
 $('.button-see-project').click(function(){
    const image = {
     'Cafe_order.png' : 'Order Kopi Online',
