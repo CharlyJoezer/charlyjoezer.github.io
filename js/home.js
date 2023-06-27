@@ -1,11 +1,11 @@
 $(document).scroll(function() {
     let scroll = $(window).scrollTop();
     if(scroll > 0){
-        $('.navbar').addClass('bg-navbar-event-scroll')
+        $('.navbar-desktop').addClass('bg-navbar-event-scroll')
         $('.navbar-link, .navbar-header .image-and-text').addClass('navbar-link-event-scroll')
     }
     if(scroll == 0){
-        $('.navbar').removeClass('bg-navbar-event-scroll')
+        $('.navbar-desktop').removeClass('bg-navbar-event-scroll')
         $('.navbar-link, .navbar-header .image-and-text').removeClass('navbar-link-event-scroll')
     }
 })
