@@ -63,9 +63,6 @@ ul, li {
 .navbar-desktop .navbar-header .image-and-text .profil-data{
     padding-left: 8px;
 }
-.navbar-desktop .nav-name {
-
-}
 .navbar-desktop .nav-profession{
     font-size: 10px;
     font-weight: 200;
@@ -649,9 +646,6 @@ ul, li {
     }
     .navbar-mobile .navbar-header .image-and-text .profil-data{
         padding-left: 8px;
-    }
-    .navbar-mobile .nav-name {
-
     }
     .navbar-mobile .nav-profession{
         font-size: 10px;
