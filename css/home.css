@@ -138,7 +138,6 @@ ul, li {
     font-family: sans-serif;
     font-weight: 200;
     cursor: pointer;
-    box-shadow: 0 0 3px #ccc;
     animation-name: example;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -702,6 +701,10 @@ ul, li {
     .navbar-mobile.bg-navbar-event-scroll{
         background-color: white;
         box-shadow : 0 0 3px grey;
+    }
+    .button-header{
+        font-size: 12px;
+        margin-top: 10px;
     }
 }
 @media screen and (min-width: 716px){
