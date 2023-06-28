@@ -109,7 +109,7 @@ ul, li {
     box-shadow : 0 0 3px grey;
 }
 .section-1 {
-    background-image: url('../asset/bg-morning.jpg');
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -130,20 +130,19 @@ ul, li {
     filter: brightness(100%);
 }
 .button-header {
-    padding: 10px;
+    padding: 12px 15px;
     margin: 0 auto;
     width: fit-content;
-    background-color: #fa3131;
+    background-color: #1c5891;
     color: white;
     font-family: sans-serif;
     font-weight: 200;
     cursor: pointer;
-    box-shadow: 0 0 3px #ccc;
     animation-name: example;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
-    border-radius: 3px;
+    border-radius: 25px;
     line-height: 0.9;
 }
 .button-header:hover{
@@ -702,6 +701,10 @@ ul, li {
     .navbar-mobile.bg-navbar-event-scroll{
         background-color: white;
         box-shadow : 0 0 3px grey;
+    }
+    .button-header{
+        font-size: 12px;
+        margin-top: 10px;
     }
 }
 @media screen and (min-width: 716px){
