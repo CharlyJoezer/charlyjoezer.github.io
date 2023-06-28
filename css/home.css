@@ -109,7 +109,7 @@ ul, li {
     box-shadow : 0 0 3px grey;
 }
 .section-1 {
-    background-image: url('../asset/bg-morning.jpg');
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
