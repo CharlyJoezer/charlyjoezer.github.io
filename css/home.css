@@ -123,6 +123,7 @@ ul, li {
     flex-wrap: wrap-reverse;
     justify-content: space-around;
     align-items: center;
+    box-shadow: inset 0 -50px 150px rgb(0, 0, 0);
 }
 .header-text h1{
     font-size: 80px;
@@ -622,15 +623,13 @@ ul, li {
     }
     .navbar-mobile{
         display: block;
-        background-color: white;
-        box-shadow : 0 0 3px grey;
     }
     .navbar-mobile .navbar-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        color: black;
+        color: white;
     }
     .navbar-mobile .navbar-header .image-and-text{
         display: flex;
@@ -640,7 +639,7 @@ ul, li {
     .navbar-mobile .navbar-header .toggle-navbar-items{
         font-size: 25px;
         padding-right: 10px;
-        color: black;
+        color: white;
         cursor: pointer;
     }
     .navbar-mobile .navbar-header .image-and-text img{
@@ -704,9 +703,9 @@ ul, li {
         background-color: #214d8f;
     }
     .navbar-mobile .navbar-link-event-scroll{
-        color: black;
+        color: black!important;
     }
-    .navbar-mobile .bg-navbar-event-scroll{
+    .navbar-mobile.bg-navbar-event-scroll{
         background-color: white;
         box-shadow : 0 0 3px grey;
     }
