@@ -65,10 +65,13 @@ $(document).ready(function(){
     const getHours = getDate.getHours();
     if(getHours >= 0 && getHours < 12){
         $('.header-text h1').html('Good Morning')
+        $('.section-1').css('background-image', "url('../asset/bg-morning.jpg')")
     }else if(getHours >= 12 && getHours < 18){
         $('.header-text h1').html('Good Afternoon')
+        $('.section-1').css('background-image', "url('../asset/bg-afternoon.jpg')")
     }else if(getHours >= 18 && getHours < 24){
         $('.header-text h1').html('Good Evening')
+        $('.section-1').css('background-image', "url('../asset/bg-night.jpg')")
     }else{
         $('.header-text h1').html('Keep Grinding')
     }
