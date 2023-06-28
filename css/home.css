@@ -130,10 +130,10 @@ ul, li {
     filter: brightness(100%);
 }
 .button-header {
-    padding: 10px;
+    padding: 12px 15px;
     margin: 0 auto;
     width: fit-content;
-    background-color: #fa3131;
+    background-color: #1c5891;
     color: white;
     font-family: sans-serif;
     font-weight: 200;
@@ -142,7 +142,7 @@ ul, li {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
-    border-radius: 3px;
+    border-radius: 25px;
     line-height: 0.9;
 }
 .button-header:hover{
