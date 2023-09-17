@@ -422,43 +422,74 @@ ul, li {
     bottom: 0;
     z-index: 9999999;
     background-color: rgba(0, 0, 0, 0.708);
-    display: none;
     color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 .content-popup{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-}
-.prev-btn, .next-btn {
-    font-size:30px;
-    padding: 5px 8px;
-    padding-bottom: 9px;
-    cursor: pointer;
-    font-weight: 800;
-    background-color: rgba(0, 0, 0, 0.598);
-    display: flex;
-    align-items: center;
-}
-.bg-popup .content-popup .image-active{
-    text-align: center;
-    width: 50%;
-}
-.bg-popup .content-popup .image-active .about-image{
-    font-size: 17px;
-    font-family: sans-serif;
-    margin-bottom: 10px;
-}
-.bg-popup .content-popup .image-active img {
-    width: 100%;
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    overflow: auto;
+    padding: 25px;
     border-radius: 5px;
+}
+.list_project{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    box-sizing: border-box;
+}
+.card_project{
     box-shadow: 0 0 3px #ccc;
+    border: 3px solid #3b509f;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.image_project{
+    width: 100%;
+    box-sizing: border-box;
+}
+.image_project img {
+    width: 100%;
+    object-fit: contain;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.image_project img:hover{
+    scale: 1.2;
+}
+.desc_project{
+    padding: 5px;
+}
+.desc_project .name{
+    font-weight: bold;
+    font-family: arial;
+    color: black;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.list_tech{
+    display: flex;
+    flex-wrap: wrap;
+}
+.list_tech img {
+    width: 35px;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #aaa;
+    margin-right: 5px;
 }
 .close-popup{
     position: fixed;
-    top: 5%;
-    right: 5%;
+    top: 10px;
+    right: 10px;
     font-size: 22px;
     cursor: pointer;
     font-weight: 800;

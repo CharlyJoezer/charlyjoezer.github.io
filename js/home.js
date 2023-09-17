@@ -24,38 +24,11 @@ $('.navbar-link, .button-navbar').click(function(){
     $('.navbar-mobile .navbar-items').removeClass('show-navbar-items-mobile')
 })
 $('.button-see-project').click(function(){
-   const image = {
-    'Cafe_order.png' : 'Order Kopi Online',
-    'skakes.jpg' : 'Pemeriksaan Laboratorium',
-    'PPM.jpg' : 'Pengaduan Masyarakat',
-    'toko_online.png' : 'Website E-Commerce '
-   };
-   const getKey = Object.keys(image)
-   const getValue = Object.values(image)
-   let imgActive = 0
-   $('#image-popup').attr('src', 'asset/'+getKey[imgActive])
-   $('#about-image').html(getValue[imgActive])
-   $('.bg-popup').css('display', 'block');
-   
-   $('.prev-btn').click(function(){
-       if(imgActive == 0){
-           return false;
-        }
-        $('#image-popup').attr('src', 'asset/'+getKey[imgActive - 1])
-        $('#about-image').html(getValue[imgActive - 1])
-        imgActive -= 1
-    })
-    $('.next-btn').click(function(){
-        if(imgActive == 3){
-            return false;
-        }
-        $('#image-popup').attr('src', 'asset/'+getKey[imgActive + 1])
-        $('#about-image').html(getValue[imgActive + 1])
-        imgActive += 1
-        
-   })
+   $('.bg-popup').css('display', 'flex');
+   $('body').css('overflow', "hidden");
 
    $('.close-popup').click(function(){
+        $('body').css('overflow', "auto");
         $('.bg-popup').css('display', 'none');
    });
 });
