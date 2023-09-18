@@ -398,6 +398,7 @@ ul, li {
     width: fit-content;
     box-sizing: border-box;
     margin-bottom: 10px;
+    font-size: 12px;
   }
   .box-contact img{
     width: 30px;
@@ -523,7 +524,7 @@ ul, li {
         margin-bottom: 20px;
     }
     .box-contact{
-        margin: 0 auto;
+        margin-bottom: 5px;
     }
     .desc-sec2{
         text-align: center;
