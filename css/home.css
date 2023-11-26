@@ -261,7 +261,6 @@ li {
 
 .section-2 {
   box-sizing: border-box;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -592,8 +591,7 @@ li {
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    min-height: auto;
-    max-height: auto;
+    min-height: 100vh;
     margin-bottom: 50px;
   }
   .section-4 {
