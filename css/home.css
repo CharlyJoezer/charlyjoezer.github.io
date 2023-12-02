@@ -121,7 +121,6 @@ li {
   width: 90%;
   margin: 0 auto;
   box-sizing: border-box;
-  margin-bottom: 60px;
 }
 .section1 {
   display: flex;
@@ -309,7 +308,6 @@ li {
   position: relative;
   display: flex;
   overflow-x: hidden;
-  margin-bottom: 60px;
 }
 .section3-content {
   width: auto;
@@ -370,12 +368,10 @@ li {
 }
 
 .section-4 {
-  padding-top: 30px;
   box-sizing: border-box;
   margin: 0 auto;
   width: 90%;
   min-height: 100vh;
-  margin-bottom: 60px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -451,8 +447,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding-top: 20px;
-  margin-bottom: 150px;
 }
 .content-section5 {
   width: 40%;
